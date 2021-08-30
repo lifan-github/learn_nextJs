@@ -69,6 +69,14 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
+"@babel/polyfill@^7.2.5":
+  version "7.12.1"
+  resolved "https://registry.nlark.com/@babel/polyfill/download/@babel/polyfill-7.12.1.tgz#1f2d6371d1261bbd961f3c5d5909150e12d0bd96"
+  integrity sha1-Hy1jcdEmG72WHzxdWQkVDhLQvZY=
+  dependencies:
+    core-js "^2.6.5"
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@7.12.5":
   version "7.12.5"
   resolved "https://registry.nlark.com/@babel/runtime/download/@babel/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
@@ -95,6 +103,14 @@
   version "3.4.0"
   resolved "https://registry.nlark.com/@ctrl/tinycolor/download/@ctrl/tinycolor-3.4.0.tgz#c3c5ae543c897caa9c2a68630bed355be5f9990f"
   integrity sha1-w8WuVDyJfKqcKmhjC+01W+X5mQ8=
+
+"@fullpage/react-fullpage@^0.1.19":
+  version "0.1.19"
+  resolved "https://registry.nlark.com/@fullpage/react-fullpage/download/@fullpage/react-fullpage-0.1.19.tgz#770ecfc96475900007ce1c29376da7fa11fb26a8"
+  integrity sha1-dw7PyWR1kAAHzhwpN22n+hH7Jqg=
+  dependencies:
+    "@babel/polyfill" "^7.2.5"
+    fullpage.js "^3.1.0"
 
 "@hapi/accept@5.0.2":
   version "5.0.2"
@@ -228,7 +244,7 @@ ansi-styles@^4.1.0:
 
 antd@^4.16.13:
   version "4.16.13"
-  resolved "https://registry.nlark.com/antd/download/antd-4.16.13.tgz?cache=0&sync_timestamp=1629706353524&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fantd%2Fdownload%2Fantd-4.16.13.tgz#e9b9b4a590db28747aae1cab98981649a35880af"
+  resolved "https://registry.nlark.com/antd/download/antd-4.16.13.tgz#e9b9b4a590db28747aae1cab98981649a35880af"
   integrity sha1-6bm0pZDbKHR6rhyrmJgWSaNYgK8=
   dependencies:
     "@ant-design/colors" "^6.0.0"
@@ -611,6 +627,11 @@ copy-to-clipboard@^3.2.0:
   dependencies:
     toggle-selection "^1.0.6"
 
+core-js@^2.6.5:
+  version "2.6.12"
+  resolved "https://registry.nlark.com/core-js/download/core-js-2.6.12.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcore-js%2Fdownload%2Fcore-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
+  integrity sha1-2TM9+nsGXjR8xWgiGdb2kIWcwuw=
+
 core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.nlark.com/core-util-is/download/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -889,6 +910,11 @@ fsevents@~2.3.1, fsevents@~2.3.2:
   version "2.3.2"
   resolved "https://registry.nlark.com/fsevents/download/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha1-ilJveLj99GI7cJ4Ll1xSwkwC/Ro=
+
+fullpage.js@^3.1.0:
+  version "3.1.2"
+  resolved "https://registry.nlark.com/fullpage.js/download/fullpage.js-3.1.2.tgz#ee6289f52edb2a9f9c25d09c4022043b701d3cc0"
+  integrity sha1-7mKJ9S7bKp+cJdCcQCIEO3AdPMA=
 
 function-bind@^1.1.1:
   version "1.1.1"
