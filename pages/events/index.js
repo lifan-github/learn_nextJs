@@ -22,7 +22,10 @@ const AllEventsPage = ({bannerList, localNavList, subNavList, salesBox, gridNav}
 }
 
 AllEventsPage.getInitialProps = async ({req}) => {
-    const res = await fetch('https://www.devio.org/io/flutter_app/json/home_page.json');
+    // 本地开发localhost: 3000 有跨域问题，server.js 配置了跨域
+    const baseUrl = 'https://www.devio.org/io/flutter_app/json/home_page.json'
+    let url = process.env.NODE_ENV === 'development' ? '/io/flutter_app/json/home_page.json' : baseUrl;
+    const res = await fetch(url);
     const json = await res.json();
     const result = {
         bannerList: json.bannerList,
