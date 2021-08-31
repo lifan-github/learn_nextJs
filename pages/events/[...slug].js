@@ -11,7 +11,14 @@ function FilteredEventPage() {
     id = router.query.id ? router.query.id : "没有传参";
     function goBack() {
         Router.back();
+        Router.beforePopState(({ url, as, options }) => {
+            // 我只允许这两条路线
+            alert('路由守卫')
+            return true
+        });
     }
+
+    
 
     return (
         <div className={classes.box}>

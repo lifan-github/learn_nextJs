@@ -18,18 +18,18 @@ function HomePage() {
             <ReactFullpage
                 licenseKey={'YOUR_KEY_HERE'}
                 scrollingSpeed={500}
-                scrollHorizontally = {true}
-                scrollHorizontallyKey = {'YOUR KEY HERE'}
+                scrollHorizontally={true}
+                scrollHorizontallyKey={'YOUR KEY HERE'}
                 render={({ state, fullpageApi }) => {
                     return (
                         <ReactFullpage.Wrapper>
                             <div className="section">
                                 <div className={classes.pageContainer1}>
                                     <p>Section 1 (welcome to fullpage.js)</p>
-                                    <Link href="/events">跳转至events入口页面(静态路由)</Link>
-                                    <Link href="/events/list">跳转至events/[eventId]页面(动态嵌套路由)</Link>
-                                    <Link href="/events/list/767">跳转至events/[eventId]/[id]页面(动态嵌套传参路由)</Link>
-                                    <div onClick={onClick}>编程式跳转路由携带参数</div>
+                                    <Link prefetch href="/events">跳转至events入口页面(静态路由)</Link>
+                                    <Link prefetch href="/events/list">跳转至events/[eventId]页面(动态嵌套路由)</Link>
+                                    <Link prefetch href="/events/list/767">跳转至events/[eventId]/[id]页面(动态嵌套传参路由)</Link>
+                                    <div style={{ backgroundColor: 'blue' }} onClick={onClick}>编程式跳转路由携带参数(子页面返回时添加了路由守卫)</div>
                                     <Button className={classes.btn1} type="primary" onClick={() => fullpageApi.moveSectionDown()}>下 滑</Button>
                                 </div>
                             </div>
